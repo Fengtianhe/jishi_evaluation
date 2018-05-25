@@ -1,9 +1,9 @@
 <template>
   <div id="app">
     <HeaderComponent></HeaderComponent>
-    <transition name="fade">
+    <div class="main">
       <router-view></router-view>
-    </transition>
+    </div>
   </div>
 </template>
 
@@ -26,5 +26,10 @@
     -moz-osx-font-smoothing: grayscale;
     text-align: center;
     color: #2c3e50;
+  }
+
+  .main {
+    width: 1200px;
+    margin: 20px auto;
   }
 </style>
