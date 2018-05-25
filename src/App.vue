@@ -1,5 +1,6 @@
 <template>
   <div id="app">
+    <HeaderComponent></HeaderComponent>
     <transition name="fade">
       <router-view></router-view>
     </transition>
@@ -7,8 +8,12 @@
 </template>
 
 <script>
+  import HeaderComponent from '@/frame/header.vue'
+
   export default {
-    name: 'App'
+    components: {
+      HeaderComponent
+    }
   }
 </script>
 
