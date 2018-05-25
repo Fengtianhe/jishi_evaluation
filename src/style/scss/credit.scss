@@ -1,0 +1,26 @@
+.credit-manage {
+  .dialog {
+    .el-form-item {
+      .el-input {
+        width: 250px;
+      }
+    }
+    .dialog-form {
+      text-align: left;
+    }
+    .dialog-footer {
+      text-align: center;
+    }
+  }
+}
+
+.credit-sign-page {
+  .title, .apply, .confirm {
+    padding: 20px;
+    text-align: left;
+  }
+  .apply {
+    border-right: 1px solid #e7e7e7;
+  }
+}
+

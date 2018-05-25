@@ -1,0 +1,108 @@
+<template>
+  <div class="top-bar">
+    <div class="top">
+      <img class="img left" src="@/assets/bar_02.gif">
+      <div class="bar-font left">科学的识人方式</div>
+      <ul class="left  bar-right">
+        <li>
+          <a href="">首页</a>
+        </li>
+        <li>
+          <a href="">产品</a>
+        </li>
+        <li>
+          <a href="">案例</a>
+        </li>
+        <li>
+          <a href="">文章</a>
+        </li>
+        <li style="width: 90px">
+          <a href="">加盟代理</a>
+        </li>
+        <li style="width: 90px">
+          <a href="">联系我们</a>
+        </li>
+      </ul>
+      <div class="bar-name left">
+        <img class="img-right  left " src="@/assets/bar_03_03.gif">
+        <span class="name  left">Pony</span>
+      </div>
+    </div>
+  </div>
+</template>
+
+<script>
+  export default {}
+</script>
+
+<style scoped lang="scss">
+  .top-bar {
+    width: 100%;
+    background: #fff;
+  }
+
+  .top {
+    width: 1180px;
+    height: 60px;
+    margin: 0 auto;
+  }
+
+  .img {
+    display: block;
+  }
+
+  .bar-font {
+    margin-left: 10px;
+    line-height: 60px;
+    color: #000;
+
+  }
+
+  .bar-right {
+    margin-left: 340px;
+    list-style: none;
+  }
+
+  .bar-right a {
+    display: block;
+    width: 76px;
+    height: 60px;
+    text-decoration: none;
+    line-height: 60px;
+    color: #000;
+  }
+
+  .bar-right li {
+    float: left;
+    display: block;
+    width: 76px;
+    height: 60px;
+    line-height: 60px;
+    text-align: center;
+  }
+
+  .bar-right li a:hover {
+    float: left;
+    display: block;
+    width: 76px;
+    height: 60px;
+    line-height: 60px;
+    background: #146fc3;
+    color: #fff;
+    text-align: center;
+  }
+
+  .bar-name {
+    margin-left: 10px;
+  }
+
+  .img-right {
+    display: block;
+    margin-top: 10px;
+  }
+
+  .name {
+    display: block;
+    line-height: 60px;
+  }
+</style>
