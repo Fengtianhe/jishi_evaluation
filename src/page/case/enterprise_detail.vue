@@ -1,46 +1,61 @@
 <template>
   <div class="enterprise-detail">
-    <div data-v-4d739807="" class="el-steps el-steps--vertical">
-      <div data-v-4d739807="" class="el-step is-vertical" style="flex-basis: 50%;">
-        <div class="el-step__head is-finish">
-          <div class="el-step__line" style="margin-right: 0px;">
-            <i class="el-step__line-inner" style="transition-delay: 0ms; border-width: 0px; height: 0%;"></i>
+    <div class="detail-box">
+      <div class="item">
+        <div class="header">
+          <div class="circle">
+            <div class="point"></div>
           </div>
-          <div class="el-step__icon is-text"><!---->
-            <div class="el-step__icon-inner"></div>
+          <div class="label">
+            客户需求
           </div>
         </div>
-        <div class="el-step__main">
-          <div class="el-step__title is-finish">步骤 1</div>
-          <div class="el-step__description is-finish">
-            <div style="height: 100px;"></div>
-          </div>
+        <div class="content">
+          <div class="" style="height: 100px"></div>
         </div>
       </div>
-      <div data-v-4d739807="" class="el-step is-vertical" style="flex-basis: 50%;">
-        <div class="el-step__head is-finish">
-          <div class="el-step__line" style="margin-right: 0px;">
-            <i class="el-step__line-inner" style="transition-delay: -150ms; border-width: 0px; height: 0%;"></i>
+      <div class="item">
+        <div class="header">
+          <div class="circle">
+            <div class="point"></div>
           </div>
-          <div class="el-step__icon is-text"><!---->
-            <div class="el-step__icon-inner"></div>
+          <div class="label">
+            客户需求
           </div>
         </div>
-        <div class="el-step__main">
-          <div class="el-step__title is-finish">步骤 2</div>
-          <div class="el-step__description is-process"></div>
+        <div class="content">
+          <div class="" style="height: 100px"></div>
         </div>
       </div>
-      <div data-v-4d739807="" class="el-step is-vertical is-flex" style="flex-basis: 50%;">
-        <div class="el-step__head is-finish">
-          <div class="el-step__line"><i class="el-step__line-inner"></i></div>
-          <div class="el-step__icon is-text"><!---->
-            <div class="el-step__icon-inner"></div>
+      <div class="item">
+        <div class="header">
+          <div class="circle">
+            <div class="point"></div>
+          </div>
+          <div class="label">
+            客户需求
           </div>
         </div>
-        <div class="el-step__main">
-          <div class="el-step__title is-finish">步骤 3</div>
-          <div class="el-step__description is-wait">这是一段很长很长很长的描述性文字</div>
+        <div class="content">
+          <div class="" style="height: 100px"></div>
+        </div>
+      </div>
+    </div>
+
+    <div class="other">
+      <div class="header">
+        <div class="line"></div>
+        其他案例
+        <div class="line"></div>
+      </div>
+      <div class="other-list">
+        <div class="item" v-for="n in 4">
+          <div class="logo">
+            <img src="" alt="">
+          </div>
+          <div class="text">
+            李大钊 《史观》：“至于﹝历史进展﹞动因何在
+          </div>
         </div>
       </div>
     </div>
@@ -54,28 +69,78 @@
 <style scoped lang="scss">
   .enterprise-detail {
     background: #fff;
-    width: 1020px;
+    width: 950px;
     margin-top: 20px;
-    .el-step__icon {
-      border-radius: 50%;
-      background-color: rgb(213, 229, 244);
-      width: 24px;
-      height: 24px;
-      .el-step__icon-inner {
-        
+    padding: 50px;
+    .detail-box {
+      border-left: 2px solid #d8e7f5;
+      .item {
+        .header {
+          .circle {
+            border-radius: 50%;
+            background-color: rgb(213, 229, 244);
+            position: relative;
+            left: -14px;
+            top: 0px;
+            width: 24px;
+            height: 24px;
+            z-index: 164;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            .point {
+              border-radius: 50%;
+              background-color: rgb(20, 111, 195);
+              width: 12px;
+              height: 12px;
+              z-index: 161;
+            }
+          }
+          .label {
+            text-align: left;
+            float: left;
+            margin: -35px 0 0 20px;
+            font-size: 30px;
+            font-weight: bolder;
+            color: #267ac8;
+          }
+        }
+      }
+    }
+    .other {
+      .header {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        .line {
+          background: #efefef;
+          height: 1px;
+          width: 120px;
+          margin: 0 15px;
+        }
+      }
+      .other-list {
+        display: flex;
+        flex-direction: row;
+        .item {
+          width: 200px;
+          height: 215px;
+          background: #ffffff;
+          margin: 20px 7.5px;
+          padding: 10px;
+          .logo {
+            width: 198px;
+            height: 148px;
+            border: 1px solid #5797d3;
+            border-radius: 5px;
+          }
+          .text {
+            font-size: 14px;
+            margin: 10px 0;
+            width: 200px;
+          }
+        }
       }
     }
   }
-
-  .椭圆_10 {
-    border-radius: 50%;
-    background-color: rgb(213, 229, 244);
-    position: absolute;
-    left: 386px;
-    top: 98px;
-    width: 24px;
-    height: 24px;
-    z-index: 160;
-  }
 </style>
-
