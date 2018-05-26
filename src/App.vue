@@ -27,9 +27,4 @@
     text-align: center;
     color: #2c3e50;
   }
-
-  .main {
-    width: 1200px;
-    margin: 20px auto;
-  }
 </style>

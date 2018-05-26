@@ -4,20 +4,17 @@
       <img class="img left" src="@/assets/bar_02.gif">
       <div class="bar-font left">科学的识人方式</div>
       <ul class="left  bar-right">
-        <li>
-          <a href="">首页</a>
+        <li :class="{'selected': $route.path==='/'}">
+          <router-link to="/">首页</router-link>
         </li>
-        <li>
-          <a href="">产品</a>
+        <li :class="{'selected':$route.matched && $route.matched[0] && $route.matched[0].path==='/product'}">
+          <router-link to="/product/product">产品</router-link>
         </li>
-        <li>
-          <a href="">案例</a>
+        <li :class="{'selected': $route.matched && $route.matched[0] && $route.matched[0].path==='/case'}">
+          <router-link to="/case/enterprise">案例</router-link>
         </li>
-        <li>
-          <a href="">文章</a>
-        </li>
-        <li style="width: 90px">
-          <a href="">加盟代理</a>
+        <li :class="{'selected': $route.matched && $route.matched[0] && $route.matched[0].path==='/news'}">
+          <router-link to="/news/news">文章</router-link>
         </li>
         <li style="width: 90px">
           <a href="">联系我们</a>
@@ -32,7 +29,11 @@
 </template>
 
 <script>
-  export default {}
+  export default {
+    mounted: function () {
+      console.log(this.$route)
+    }
+  }
 </script>
 
 <style scoped lang="scss">
@@ -81,7 +82,18 @@
     text-align: center;
   }
 
-  .bar-right li a:hover {
+  /*.bar-right li a:hover {*/
+  /*float: left;*/
+  /*display: block;*/
+  /*width: 76px;*/
+  /*height: 60px;*/
+  /*line-height: 60px;*/
+  /*background: #146fc3;*/
+  /*color: #fff;*/
+  /*text-align: center;*/
+  /*}*/
+
+  .bar-right li.selected {
     float: left;
     display: block;
     width: 76px;
@@ -90,6 +102,9 @@
     background: #146fc3;
     color: #fff;
     text-align: center;
+    a {
+      color: #fff
+    }
   }
 
   .bar-name {

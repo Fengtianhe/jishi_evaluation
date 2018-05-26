@@ -49,9 +49,10 @@
 
 <style scoped lang="scss">
   .container {
-    margin-top: 20px;
+    margin: 20px auto;
     display: flex;
     flex-direction: row;
+    width: 1200px;
     .menu {
       width: 300px;
       .avatar {
