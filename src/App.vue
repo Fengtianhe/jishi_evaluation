@@ -3,6 +3,9 @@
     <HeaderComponent></HeaderComponent>
     <div class="main">
       <router-view></router-view>
+    </div>p
+    <div class="app-footer">
+      &copy;北京基石测评网络技术有限公司 All Rights Reserved 京ICP备18025535号
     </div>
   </div>
 </template>
@@ -26,5 +29,17 @@
     -moz-osx-font-smoothing: grayscale;
     text-align: center;
     color: #2c3e50;
+  }
+
+  .main {
+    min-height: 600px;
+  }
+
+  .app-footer {
+    height: 100px;
+    background: #1d1f22;
+    line-height: 100px;
+    text-align: center;
+    color: #666;
   }
 </style>
