@@ -35,7 +35,7 @@ export default new Router({
     {
       path: '/case',
       name: '案例',
-      component: resolve => (require(['../frame/person.vue'], resolve)),
+      component: resolve => (require(['../frame/case.vue'], resolve)),
       children: [
         {
           path: '/case/enterprise',
@@ -72,7 +72,7 @@ export default new Router({
     {
       path: '/product',
       name: '产品',
-      component: resolve => (require(['../frame/person.vue'], resolve)),
+      component: resolve => (require(['../frame/blank.vue'], resolve)),
       children: [
         {
           path: '/product/product',

@@ -35,12 +35,9 @@
 </template>
 
 <script type="text/javascript">
-  import HeaderComponent from '@/frame/header.vue'
 
   export default {
-    components: {
-      HeaderComponent
-    },
+    components: {},
     mounted: function () {
 
     }
