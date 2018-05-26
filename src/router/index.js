@@ -84,10 +84,10 @@ export default new Router({
     {
       path: '/news',
       name: '文章',
-      component: resolve => (require(['../frame/person.vue'], resolve)),
+      component: resolve => (require(['../frame/blank.vue'], resolve)),
       children: [
         {
-          path: '/news/newsh',
+          path: '/news/news',
           name: '文章列表',
           component: resolve => (require(['../page/news/news.vue'], resolve))
         }

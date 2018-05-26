@@ -43,9 +43,12 @@
   }
 
   .top {
-    width: 1180px;
+    width: 1100px;
     height: 60px;
     margin: 0 auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
   }
 
   .img {
