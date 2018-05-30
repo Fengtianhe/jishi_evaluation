@@ -6,7 +6,18 @@
         <div class="bar-font left">科学的识人方式</div>
       </router-link>
 
-      <ul class="left  bar-right">
+      <div class="bar-name right">
+        <router-link to="/person/test_card" v-if='false'>
+          <img class="img-right  left " src="@/assets/img/bar_03_03.gif">
+          <span class="name  left">Pony</span>
+        </router-link>
+
+        <div v-else class="login_btn">
+          <div @click="show_login_dialog()">登陆</div>
+        </div>
+      </div>
+
+      <ul class="right  bar-right">
         <li :class="{'selected': $route.path==='/'}">
           <router-link to="/">首页</router-link>
         </li>
@@ -19,23 +30,56 @@
         <li :class="{'selected': $route.matched && $route.matched[0] && $route.matched[0].path==='/news'}">
           <router-link to="/news/news">文章</router-link>
         </li>
-        <li style="width: 90px">
+        <li style="width: 90px;cursor: pointer" @click="contact_dialog = !contact_dialog">
           联系我们
         </li>
       </ul>
-      <div class="bar-name left">
-        <router-link to="/person/test_card">
-          <img class="img-right  left " src="@/assets/img/bar_03_03.gif">
-          <span class="name  left">Pony</span>
-        </router-link>
+    </div>
+
+    <div class="dialog" v-if="contact_dialog">
+      <div class="main">
+        <div class="qrs">
+          <div class="qr">
+            <img src="@/assets/img/qr.png" alt="">
+            <div>微信扫描关注我们的服务号 <br> 获取最新咨询</div>
+          </div>
+          <div class="qr">
+            <img src="@/assets/img/qr.png" alt="">
+            <div>使用我们的小程序 <br> 测评购买报告查看</div>
+          </div>
+          <div class="qr">
+            <img src="@/assets/img/qr.png" alt="">
+            <div>客服微信号 <br> 问题随时问</div>
+          </div>
+        </div>
+        <div class="call">
+          <img src="@/assets/img/icon_phone.png" alt="">
+          <div>全国免费热线：400-888-8888</div>
+        </div>
       </div>
     </div>
+
+    <el-dialog :visible.sync="login_dialog" class="login_dialog" width="250px" :show-close="false">
+      <img src="@/assets/img/qr.png" alt="">
+    </el-dialog>
   </div>
 </template>
 
 <script>
   export default {
+    data: function () {
+      return {
+        contact_dialog: false,
+        login_dialog: false
+      }
+    },
     mounted: function () {
+    },
+    methods: {
+      show_login_dialog: function () {
+        const self = this
+        self.login_dialog = true
+      }
     }
   }
 </script>
@@ -47,12 +91,9 @@
   }
 
   .top {
-    width: 1100px;
+    width: 1200px;
     height: 60px;
     margin: 0 auto;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
   }
 
   .img {
@@ -67,8 +108,8 @@
   }
 
   .bar-right {
-    margin-left: 340px;
     list-style: none;
+    margin-right: 30px;
   }
 
   .bar-right a {
@@ -115,7 +156,9 @@
   }
 
   .bar-name {
+    width: 100px;
     margin-left: 10px;
+    line-height: 60px;
   }
 
   .img-right {
@@ -126,5 +169,53 @@
   .name {
     display: block;
     line-height: 60px;
+  }
+
+  .dialog {
+    width: 100%;
+    height: 300px;
+    position: absolute;
+    .main {
+      width: 1200px;
+      margin: 0 auto;
+      opacity: 0.8;
+      display: flex;
+      .qrs {
+        width: 900px;
+        height: 300px;
+        display: flex;
+        flex-direction: row;
+        .qr {
+          display: flex;
+          flex-direction: column;
+          justify-content: space-around;
+          align-items: center;
+          width: 300px;
+          background: #fff;
+          img {
+            width: 175px;
+            height: 175px;
+          }
+        }
+      }
+      .call {
+        width: 300px;
+        height: 300px;
+        background: #126abd;
+        color: #ffffff;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+        img {
+          width: 140px;
+          height: 140px;
+        }
+      }
+    }
+  }
+
+  .login_btn {
+    cursor: pointer;
   }
 </style>
