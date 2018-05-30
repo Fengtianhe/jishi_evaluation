@@ -47,9 +47,6 @@
     img {
       width: 100%;
     }
-    .banner {
-      height: 450px;
-    }
     .idea {
       width: 1200px;
       margin: 0 auto;
