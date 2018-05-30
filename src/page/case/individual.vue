@@ -28,7 +28,7 @@
       .btn {
         width: 220px;
         height: 60px;
-        background-image: url("../../assets/jianbian_btn_1.png");
+        background-image: url("../../assets/img/jianbian_btn_1.png");
       }
     }
   }

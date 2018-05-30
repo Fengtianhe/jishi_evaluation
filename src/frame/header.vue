@@ -1,8 +1,11 @@
 <template>
   <div class="top-bar">
     <div class="top">
-      <img class="img left" src="@/assets/bar_02.gif">
-      <div class="bar-font left">科学的识人方式</div>
+      <router-link to="/">
+        <img class="img left" src="@/assets/img/bar_02.gif">
+        <div class="bar-font left">科学的识人方式</div>
+      </router-link>
+
       <ul class="left  bar-right">
         <li :class="{'selected': $route.path==='/'}">
           <router-link to="/">首页</router-link>
@@ -17,12 +20,14 @@
           <router-link to="/news/news">文章</router-link>
         </li>
         <li style="width: 90px">
-          <a href="">联系我们</a>
+          联系我们
         </li>
       </ul>
       <div class="bar-name left">
-        <img class="img-right  left " src="@/assets/bar_03_03.gif">
-        <span class="name  left">Pony</span>
+        <router-link to="/person/test_card">
+          <img class="img-right  left " src="@/assets/img/bar_03_03.gif">
+          <span class="name  left">Pony</span>
+        </router-link>
       </div>
     </div>
   </div>
@@ -31,7 +36,6 @@
 <script>
   export default {
     mounted: function () {
-      console.log(this.$route)
     }
   }
 </script>

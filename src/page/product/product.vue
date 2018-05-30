@@ -2,7 +2,7 @@
   <div class="product">
     <div class="detail">
       <div class="img">
-        <img src="@/assets/product.png" alt="">
+        <img src="@/assets/img/product.png" alt="">
       </div>
       <div class="info">
         <div class="title">测评介绍</div>
@@ -21,16 +21,16 @@
     </div>
 
     <div class="img-intro">
-      <img src="@/assets/p1.png" alt="">
+      <img src="@/assets/img/p1.png" alt="">
     </div>
     <div class="img-intro">
-      <img src="@/assets/p2.png" alt="">
+      <img src="@/assets/img/p2.png" alt="">
     </div>
     <div class="img-intro">
-      <img src="@/assets/p3.png" alt="">
+      <img src="@/assets/img/p3.png" alt="">
     </div>
     <div class="img-intro">
-      <img src="@/assets/p4.png" alt="">
+      <img src="@/assets/img/p4.png" alt="">
     </div>
   </div>
 </template>
@@ -47,18 +47,16 @@
       margin: 20px auto;
       display: flex;
       flex-direction: row;
+      justify-content: space-between;
       .img {
-        width: 555px;
-        height: 335px;
         img {
           width: 540px;
         }
       }
       .info {
         width: 620px;
-        height: 295px;
+        height: 335px;
         background: #ffffff;
-        margin: 0 0 0 15px;
         padding: 20px;
         .title {
           text-align: left;

@@ -90,6 +90,11 @@ export default new Router({
           path: '/news/news',
           name: '文章列表',
           component: resolve => (require(['../page/news/news.vue'], resolve))
+        },
+        {
+          path: '/news/detail',
+          name: '文章详情',
+          component: resolve => (require(['../page/news/detail.vue'], resolve))
         }
       ]
     }

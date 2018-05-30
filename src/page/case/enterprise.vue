@@ -23,7 +23,7 @@
     justify-content: flex-start;
     flex-wrap: wrap;
     .item {
-      width: 220px;
+      width: 240px;
       height: 215px;
       background: #ffffff;
       margin: 20px 7.5px;

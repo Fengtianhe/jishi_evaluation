@@ -1,8 +1,8 @@
 <template>
   <div class="news">
-    <div class="item" v-for="n in 5">
+    <div class="item" v-for="n in 5" @click="show_detail(n)">
       <div class="logo">
-        <img src="@/assets/news_logo.png" alt="">
+        <img src="@/assets/img/news_logo.png" alt="">
       </div>
       <div class="info-box">
         <div class="title">金融无暇</div>
@@ -17,7 +17,13 @@
 </template>
 
 <script>
-  export default {}
+  export default {
+    methods: {
+      show_detail: function (n) {
+        this.$router.push({path: '/news/detail'})
+      }
+    }
+  }
 </script>
 
 <style scoped lang="scss">
@@ -35,6 +41,7 @@
       width: 560px;
       height: 240px;
       border: 1px solid #efefef;
+      cursor: pointer;
       .logo {
         width: 300px;
         height: 240px;

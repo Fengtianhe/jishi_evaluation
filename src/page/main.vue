@@ -1,28 +1,38 @@
 <template>
   <div class="home">
     <div class="banner">
-      <img src="@/assets/7.png" alt="">
+      <img src="@/assets/img/7.png" alt="">
     </div>
     <div class="idea">
-      <img src="@/assets/6.png" alt="">
+      <img src="@/assets/img/6.png" alt="">
     </div>
-    <div>
-      <img src="@/assets/5.png" alt="">
+    <div class="idea">
+      <img src="@/assets/img/founder.png" alt="">
     </div>
-    <div>
-      <img src="@/assets/4.png" alt="">
+    <div class="idea" style="background-image: url(@/assets/img/bg.png)">
+      <img src="@/assets/img/founders.png" alt="">
     </div>
-    <div>
-      <img src="@/assets/3.png" alt="">
+    <div class="idea">
+      <img src="@/assets/img/4.png" alt="">
     </div>
-    <div>
-      <img src="@/assets/2.png" alt="">
+    <div class="idea">
+      <img src="@/assets/img/3.png" alt="">
     </div>
-    <div>
-      <img src="@/assets/1.png" alt="">
+    <div class="idea">
+      <img src="@/assets/img/2.png" alt="">
     </div>
-    <div>
-      <img src="@/assets/hzqy.png" alt="">
+    <div class="idea">
+      <img src="@/assets/img/1.png" alt="">
+    </div>
+    <div style="background: white" class="idea">
+      <router-link to="/product/product">
+        <div
+          style="color: #5392f3;background: #f3f4f5;height: 60px;width: 1180px;border-radius: 5px;margin:10px auto;line-height: 60px">
+          剩余报告85%，点击查看完整示例，跳转到产品详情页
+        </div>
+      </router-link>
+
+      <img src="@/assets/img/hzqy.png" alt="">
     </div>
   </div>
 </template>
@@ -41,7 +51,9 @@
       height: 450px;
     }
     .idea {
-      height: 460px;
+      width: 1200px;
+      margin: 0 auto;
+      overflow: hidden;
     }
   }
 </style>

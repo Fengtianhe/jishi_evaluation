@@ -3,26 +3,26 @@
     <div class="menu">
       <div class="avatar">
         <img
-          src="@/assets/avatar.png"
+          src="@/assets/img/avatar.png"
           alt="eeee">
         <div class="name_text">Pony</div>
       </div>
       <div class="left_menu">
-        <router-link to="/person/message">
-          <div class="item" :class="{'selected': $route.path === '/person/message'}">我的消息</div>
-        </router-link>
-        <router-link to="/person/message">
-          <div class="item">我的报告</div>
-        </router-link>
+        <!--<router-link to="/person/message">-->
+        <!--<div class="item" :class="{'selected': $route.path === '/person/message'}">我的消息</div>-->
+        <!--</router-link>-->
+        <!--<router-link to="/person/message">-->
+        <!--<div class="item">我的报告</div>-->
+        <!--</router-link>-->
         <router-link to="/person/test_card">
           <div class="item" :class="{'selected': $route.path === '/person/test_card'}">我的测评卡</div>
         </router-link>
         <router-link to="/person/invited">
           <div class="item" :class="{'selected': $route.path === '/person/invited'}">我邀请的</div>
         </router-link>
-        <router-link to="/person/message">
-          <div class="item">设置</div>
-        </router-link>
+        <!--<router-link to="/person/message">-->
+        <!--<div class="item">设置</div>-->
+        <!--</router-link>-->
       </div>
       <div class="logout">
         退出登录
@@ -71,7 +71,6 @@
       .left_menu {
         margin-top: 20px;
         width: 300px;
-        height: 300px;
         border-radius: 10px;
         background: #ffffff;
         .item {
