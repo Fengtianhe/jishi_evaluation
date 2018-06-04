@@ -24,9 +24,9 @@
         <li :class="{'selected':$route.matched && $route.matched[0] && $route.matched[0].path==='/product'}">
           <router-link to="/product/product">产品</router-link>
         </li>
-        <li :class="{'selected': $route.matched && $route.matched[0] && $route.matched[0].path==='/case'}">
+        <!--<li :class="{'selected': $route.matched && $route.matched[0] && $route.matched[0].path==='/case'}">
           <router-link to="/case/enterprise">案例</router-link>
-        </li>
+        </li>-->
         <li :class="{'selected': $route.matched && $route.matched[0] && $route.matched[0].path==='/news'}">
           <router-link to="/news/news">文章</router-link>
         </li>
@@ -54,7 +54,8 @@
         </div>
         <div class="call">
           <img src="@/assets/img/icon_phone.png" alt="">
-          <div>全国免费热线：400-888-8888</div>
+          <div>全国免费热线：400-101-9859</div>
+          <div>地址：北京市朝阳区立水桥北方明珠大厦2911</div>
         </div>
       </div>
     </div>
@@ -178,7 +179,6 @@
     .main {
       width: 1200px;
       margin: 0 auto;
-      opacity: 0.8;
       display: flex;
       .qrs {
         width: 900px;
