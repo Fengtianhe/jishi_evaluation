@@ -12,7 +12,19 @@
 </template>
 
 <script>
-  export default {}
+  export default {
+    mounted: function () {
+      this.get_user()
+    },
+    methods: {
+      get_user: function () {
+        const self = this
+        self.$api.get('/getInviterUsers', {
+          open_id: localStorage.getItem('open_id')
+        })
+      }
+    }
+  }
 </script>
 
 <style scoped lang="scss">

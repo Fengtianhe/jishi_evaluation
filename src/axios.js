@@ -1,7 +1,7 @@
 // 配置API接口地址
 import {Message, Loading} from 'element-ui'
 
-let root = 'http://api.backstage.zrb.dev.kuaiyugroup.com'
+let root = 'http://192.168.0.15/api'
 // 引用axios
 const axios = require('axios')
 
@@ -40,10 +40,6 @@ function filterNull (o) {
 
 function apiAxios (method, url, params, success, failure) {
   let loadingInstance = Loading.service({fullscreen: true, text: '加载中，请等待！'})
-  var token = sessionStorage.getItem('token') ? sessionStorage.getItem('token') : ''
-  if (!token) {
-    location.href = '#/login'
-  }
   if (params) {
     params = filterNull(params)
   }
@@ -55,10 +51,7 @@ function apiAxios (method, url, params, success, failure) {
     'baseURL': root,
     'withCredentials': false,
     'headers': {
-      token: token,
-      requestTime: new Date().toISOString(),
-      version: 1.0,
-      platform: 'ZRB_ADMIN'
+      'open_id': localStorage.getItem('open_id')
     }
   }).then(function (res) {
     loadingInstance.close()
@@ -85,18 +78,8 @@ function apiAxios (method, url, params, success, failure) {
     } else {
       // Something happened in setting up the request that triggered an Error
       console.log('Error', error.message);
-
-      if (url === '/file/upload') {
-        Message.error('上传文件过大')
-      } else {
-        location.href = `#/error`
-      }
     }
     console.log(error.config);
-    //if (error) {
-    //  window.alert('api error, HTTP CODE: ' + res.status);
-    //  return;
-    //}
   });
 }
 

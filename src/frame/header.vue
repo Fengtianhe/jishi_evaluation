@@ -7,7 +7,7 @@
       </router-link>
 
       <div class="bar-name right">
-        <router-link to="/person/test_card" v-if='false'>
+        <router-link to="/person/test_card" v-if='()=>{return localStorage.getItem("open_id")}'>
           <img class="img-right  left " src="@/assets/img/bar_03_03.gif">
           <span class="name  left">Pony</span>
         </router-link>

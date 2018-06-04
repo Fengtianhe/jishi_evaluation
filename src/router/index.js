@@ -15,11 +15,11 @@ export default new Router({
       name: '个人中心',
       component: resolve => (require(['../frame/person.vue'], resolve)),
       children: [
-        {
-          path: '/person/message',
-          name: '我的消息',
-          component: resolve => (require(['../page/person/message.vue'], resolve))
-        },
+        // {
+        //   path: '/person/message',
+        //   name: '我的消息',
+        //   component: resolve => (require(['../page/person/message.vue'], resolve))
+        // },
         {
           path: '/person/test_card',
           name: '测评卡',

@@ -16,6 +16,9 @@
   export default {
     components: {
       HeaderComponent
+    },
+    mounted: function () {
+      localStorage.setItem('open_id', 'o3ny05PvLra8OLBKMIOdDmt7Qbz4')
     }
   }
 </script>
