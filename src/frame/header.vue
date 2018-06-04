@@ -7,7 +7,7 @@
       </router-link>
 
       <div class="bar-name right">
-        <router-link to="/person/test_card" v-if='()=>{return localStorage.getItem("open_id")}'>
+        <router-link to="/person/test_card" v-if='showAvatar()'>
           <img class="img-right  left " src="@/assets/img/bar_03_03.gif">
           <span class="name  left">Pony</span>
         </router-link>
@@ -63,6 +63,8 @@
     <el-dialog :visible.sync="login_dialog" class="login_dialog" width="250px" :show-close="false">
       <img src="@/assets/img/qr.png" alt="">
     </el-dialog>
+
+    <div id="login_container"></div>
   </div>
 </template>
 
@@ -78,8 +80,20 @@
     },
     methods: {
       show_login_dialog: function () {
-        const self = this
-        self.login_dialog = true
+        const redirectUri = 'https://www.jishiceping.com/person/test_card'
+        const obj = new WxLogin({
+          id: 'login_container',// div的id
+          appid: 'wx42b0c68b40525f96',
+          scope: 'snsapi_login',// 写死
+          redirect_uri: encodeURI(redirectUri),
+          state: '',
+          style: 'black',// 二维码黑白风格
+          // href: 'https://某个域名下的css文件'
+        })
+        console.log(obj)
+      },
+      showAvatar: function () {
+        return window.localStorage.getItem('open_id')
       }
     }
   }

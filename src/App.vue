@@ -18,7 +18,8 @@
       HeaderComponent
     },
     mounted: function () {
-      localStorage.setItem('open_id', 'o3ny05PvLra8OLBKMIOdDmt7Qbz4')
+      //o3ny05PvLra8OLBKMIOdDmt7Qbz4
+      localStorage.setItem('open_id', '')
     }
   }
 </script>
