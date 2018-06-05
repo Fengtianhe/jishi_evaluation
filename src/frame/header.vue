@@ -54,7 +54,7 @@
         </div>
         <div class="call">
           <img src="@/assets/img/icon_phone.png" alt="">
-          <div>全国免费热线：400-101-9859</div>
+          <div>全国免费热线：010-40088888-88</div>
           <div>地址：北京市朝阳区立水桥北方明珠大厦2911</div>
         </div>
       </div>
