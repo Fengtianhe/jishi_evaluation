@@ -6,11 +6,17 @@
       </div>
       <div class="info">
         <div class="title">测评介绍</div>
-        <div class="cont">将卡上的饭卡上对方拉黑删掉了发送 i回家 宁可；看到烦恼 镂空设计大方；老师的 当时发生的六块腹肌了；卡上对方；阿克苏那地方</div>
+        <div class="cont">
+          LEAP平台具有使用简便、运行高效、易于扩展、安全可靠等特点，可以帮助企业快速实现内部数据和外部数据的融合，给企业带来极佳的数据计算与分析挖掘能力，辅助发掘隐藏在数据背后的巨大商业价值，加快从数据到业务的价值实现。
+        </div>
         <div class="bottom">
-          <div class="price">限时活动价：¥29.9 ¥99</div>
+          <div class="price">
+            限时活动价：¥985.00
+            <br>
+            <span class="origin_price">¥1980.00</span>
+          </div>
           <div class="btn">
-            <button>立即抢购</button>
+            <button @click="xcx_qr_dialog = true">立即抢购</button>
           </div>
         </div>
       </div>
@@ -32,11 +38,21 @@
     <div class="img-intro">
       <img src="@/assets/img/p4.png" alt="">
     </div>
+
+    <el-dialog :visible.sync="xcx_qr_dialog">
+      <img src="@/assets/img/xcx.png" alt="">
+    </el-dialog>
   </div>
 </template>
 
 <script>
-  export default {}
+  export default {
+    data: function () {
+      return {
+        xcx_qr_dialog: false
+      }
+    }
+  }
 </script>
 
 <style scoped lang="scss">
@@ -66,13 +82,20 @@
         .cont {
           text-align: left;
           margin: 20px 0 0 0;
-          font-size: 12px;
           height: 200px;
+          line-height: 30px;
+          font-weight: bolder;
         }
         .bottom {
           display: flex;
           flex-direction: row;
           justify-content: space-between;
+          .price {
+            text-align: left;
+            .origin_price {
+              text-decoration: line-through;
+            }
+          }
         }
       }
     }
