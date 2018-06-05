@@ -2,6 +2,7 @@
   <div class="container">
     <div class="menu">
       <div class="left_menu">
+        <div class="item title">案例</div>
         <router-link to="/case/enterprise">
           <div class="item" :class="{'selected': $route.path === '/case/enterprise'}">企业案例</div>
         </router-link>
@@ -13,8 +14,17 @@
         </router-link>
       </div>
     </div>
+
     <div class="content">
-      <router-view></router-view>
+      <div class="header">
+        <div class="label">{{$route.name}}</div>
+        <div class="nav">
+          首页>案例>{{$route.name}}
+        </div>
+      </div>
+      <div style="margin-top: 20px">
+        <router-view></router-view>
+      </div>
     </div>
   </div>
 </template>
@@ -24,7 +34,7 @@
   export default {
     components: {},
     mounted: function () {
-
+      console.log(this.$route)
     }
   }
 </script>
@@ -34,12 +44,13 @@
     margin: 0 auto;
     display: flex;
     flex-direction: row;
+    justify-content: space-between;
     width: 1200px;
     .menu {
-      width: 140px;
+      width: 320px;
       .left_menu {
         margin-top: 20px;
-        width: 140px;
+        width: 320px;
         background: #ffffff;
         .item {
           height: 59px;
@@ -47,16 +58,33 @@
           text-align: center;
           border-bottom: 1px solid #efefef;
           cursor: pointer;
-          &.selected {
-            background: #3b86cc;
+          font-weight: bolder;
+          &.title {
+            background: #043e87;
             color: #fff;
+          }
+          &.selected {
+            color: #043e87;
           }
         }
       }
     }
     .content {
-      margin-left: 20px;
-      width: 1020px;
+      margin: 20px 0;
+      width: 755px;
+      .header {
+        border-bottom: 1px solid #043e87;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        .label {
+          font-weight: bolder;
+          color: #043e87;
+        }
+        .nav {
+          color: #666;
+        }
+      }
     }
   }
 </style>
