@@ -2,8 +2,7 @@
   <div class="top-bar">
     <div class="top">
       <router-link to="/">
-        <img class="img left" src="@/assets/img/bar_02.gif">
-        <div class="bar-font left">科学的识人方式</div>
+        <img class="img left" src="@/assets/img/logo.png" style="height: 60px">
       </router-link>
 
       <div class="bar-name right">
@@ -81,6 +80,7 @@
     methods: {
       show_login_dialog: function () {
         const redirectUri = 'https://www.jishiceping.com/person/test_card'
+        const appId = 'wx42b0c68b40525f96'
         const obj = new WxLogin({
           id: 'login_container',// div的id
           appid: 'wx42b0c68b40525f96',
@@ -231,5 +231,25 @@
 
   .login_btn {
     cursor: pointer;
+  }
+
+  .impowerBox .qrcode {
+    width: 200px;
+  }
+
+  .impowerBox .title {
+    display: none;
+  }
+
+  .impowerBox .info {
+    width: 200px;
+  }
+
+  .status_icon {
+    display: none
+  }
+
+  .impowerBox .status {
+    text-align: center;
   }
 </style>
