@@ -39,15 +39,15 @@
       <div class="main">
         <div class="qrs">
           <div class="qr">
-            <img src="@/assets/img/qr.png" alt="">
+            <img src="@/assets/img/gzh.png" alt="">
             <div>微信扫描关注我们的服务号 <br> 获取最新咨询</div>
           </div>
           <div class="qr">
-            <img src="@/assets/img/qr.png" alt="">
+            <img src="@/assets/img/xcx.png" alt="">
             <div>使用我们的小程序 <br> 测评购买报告查看</div>
           </div>
           <div class="qr">
-            <img src="@/assets/img/qr.png" alt="">
+            <img src="@/assets/img/kf.png" alt="">
             <div>客服微信号 <br> 问题随时问</div>
           </div>
         </div>
