@@ -79,18 +79,18 @@
     },
     methods: {
       show_login_dialog: function () {
-        const redirectUri = 'https://www.jishiceping.com/person/test_card'
-        const appId = 'wx42b0c68b40525f96'
-        const obj = new WxLogin({
-          id: 'login_container',// div的id
-          appid: 'wx42b0c68b40525f96',
-          scope: 'snsapi_login',// 写死
-          redirect_uri: encodeURI(redirectUri),
-          state: '',
-          style: 'black',// 二维码黑白风格
-          // href: 'https://某个域名下的css文件'
-        })
-        console.log(obj)
+        // const redirectUri = 'https://www.jishiceping.com/person/test_card'
+        // const appId = 'wx42b0c68b40525f96'
+        // const obj = new WxLogin({
+        //   id: 'login_container',// div的id
+        //   appid: 'wx42b0c68b40525f96',
+        //   scope: 'snsapi_login',// 写死
+        //   redirect_uri: encodeURI(redirectUri),
+        //   state: '',
+        //   style: 'black',// 二维码黑白风格
+        //   // href: 'https://某个域名下的css文件'
+        // })
+        // console.log(obj)
       },
       showAvatar: function () {
         return window.localStorage.getItem('open_id')
