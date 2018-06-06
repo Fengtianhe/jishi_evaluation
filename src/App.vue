@@ -5,7 +5,7 @@
       <router-view></router-view>
     </div>
     <div class="app-footer">
-      &copy;北京基石测评网络技术有限公司 All Rights Reserved 京ICP备18025535号
+      &copy;北京基石测评网络技术有限公司 All Rights Reserved 京ICP备18025535号-1
     </div>
   </div>
 </template>

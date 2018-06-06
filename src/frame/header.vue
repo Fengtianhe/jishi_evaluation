@@ -26,9 +26,9 @@
         <!--<li :class="{'selected': $route.matched && $route.matched[0] && $route.matched[0].path==='/case'}">-->
           <!--<router-link to="/case/enterprise">案例</router-link>-->
         <!--</li>-->
-        <li :class="{'selected': $route.matched && $route.matched[0] && $route.matched[0].path==='/news'}">
-          <router-link to="/news/news">文章</router-link>
-        </li>
+        <!--<li :class="{'selected': $route.matched && $route.matched[0] && $route.matched[0].path==='/news'}">-->
+        <!--<router-link to="/news/news">文章</router-link>-->
+        <!--</li>-->
         <li style="width: 90px;cursor: pointer" @click="contact_dialog = !contact_dialog">
           联系我们
         </li>
