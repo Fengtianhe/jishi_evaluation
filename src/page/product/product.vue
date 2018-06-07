@@ -17,7 +17,7 @@
             <span class="origin_price">¥1980.00</span>
           </div>
           <div class="btn">
-            <button @click="xcx_qr_dialog = true">立即抢购</button>
+            <button @click="xcx_qr_dialog = true">扫码查看</button>
           </div>
         </div>
       </div>
