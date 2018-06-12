@@ -22,6 +22,15 @@
       localStorage.setItem('open_id', '')
     }
   }
+
+  var _hmt = _hmt || [];
+  (function() {
+      var hm = document.createElement("script");
+      hm.src = "https://hm.baidu.com/hm.js?e07019abc5655c883249eb3f2b6b73b5";
+      var s = document.getElementsByTagName("script")[0];
+      s.parentNode.insertBefore(hm, s);
+  })();
+
 </script>
 
 <style lang="scss">
