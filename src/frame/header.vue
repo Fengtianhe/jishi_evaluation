@@ -83,12 +83,9 @@
       const self = this
       const appId = 'wx047532f5c0c4273a'
       if (self.$route.query.code) {
-        self.$api.get('https://api.weixin.qq.com/sns/oauth2/access_token', {
-          appid: appId,
-          secret: '089bb1765c462abcf4aaba72cb57022f',
-          code: self.$route.query.code,
-          grant_type: 'authorization_code'
-        }, function (res) {
+        const code = self.$route.query.code
+        var jsonp = require('jsonp')
+        jsonp(`https://api.weixin.qq.com/sns/oauth2/access_token?appid=${appId}&secret=089bb1765c462abcf4aaba72cb57022f?code=${code}&grant_type=authorization_code`, null, function (res) {
           console.log(res)
         })
       }
