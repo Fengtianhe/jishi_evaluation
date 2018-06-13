@@ -17,19 +17,22 @@
       </div>
 
       <ul class="right  bar-right">
-        <li :class="{'selected': $route.path==='/' && !contact_dialog}">
+        <li :class="{'selected': $route.path==='/' && !contact_dialog}" @click="contact_dialog = false">
           <router-link to="/">首页</router-link>
         </li>
         <li
-          :class="{'selected':$route.matched && $route.matched[0] && $route.matched[0].path==='/product' && !contact_dialog}">
+          :class="{'selected':$route.matched && $route.matched[0] && $route.matched[0].path==='/product' && !contact_dialog}"
+          @click="contact_dialog = false">
           <router-link to="/product/product">产品</router-link>
         </li>
         <li
-          :class="{'selected': $route.matched && $route.matched[0] && $route.matched[0].path==='/case' && !contact_dialog}">
+          :class="{'selected': $route.matched && $route.matched[0] && $route.matched[0].path==='/case' && !contact_dialog}"
+          @click="contact_dialog = false">
           <router-link to="/case/enterprise">案例</router-link>
         </li>
         <li
-          :class="{'selected': $route.matched && $route.matched[0] && $route.matched[0].path==='/news' && !contact_dialog}">
+          :class="{'selected': $route.matched && $route.matched[0] && $route.matched[0].path==='/news' && !contact_dialog}"
+          @click="contact_dialog = false">
           <router-link to="/news/news">文章</router-link>
         </li>
         <li style="width: 90px;cursor: pointer" @click="contact_dialog = !contact_dialog"
@@ -97,20 +100,10 @@
     },
     methods: {
       show_login_dialog: function () {
-        const redirectUri = 'https%3A%2F%2Fwww.jishiceping.com%2F%23%2Fperson%2Ftest_card'
-        const appId = 'wx047532f5c0c4273a'
-        // const obj = new WxLogin({
-        //   id: 'login_container',// div的id
-        //   appid: 'wx42b0c68b40525f96',
-        //   scope: 'snsapi_base',// 写死
-        //   redirect_uri: encodeURI(redirectUri),
-        //   state: '',
-        //   style: 'black',// 二维码黑白风格
-        //   // href: 'https://某个域名下的css文件'
-        // })
-        // console.log(obj)
-        const url = `https://open.weixin.qq.com/connect/qrconnect?appid=${appId}&redirect_uri=${redirectUri}&response_type=code&scope=snsapi_login#wechat_redirect`
-        window.location = url
+        // const redirectUri = 'https%3A%2F%2Fwww.jishiceping.com%2F%23%2Fperson%2Ftest_card'
+        // const appId = 'wx047532f5c0c4273a'
+        // const url = `https://open.weixin.qq.com/connect/qrconnect?appid=${appId}&redirect_uri=${redirectUri}&response_type=code&scope=snsapi_login#wechat_redirect`
+        // window.location = url
       },
       showAvatar: function () {
         return window.localStorage.getItem('open_id')

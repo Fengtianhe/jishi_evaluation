@@ -68,10 +68,6 @@
   }
 
   .app-footer {
-    position: fixed;
-    bottom: 0;
-    left: 0;
-    right: 0;
     height: 100px;
     background: #1d1f22;
     line-height: 100px;
