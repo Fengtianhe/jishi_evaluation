@@ -88,18 +88,20 @@
     },
     methods: {
       show_login_dialog: function () {
-        const redirectUri = 'https://www.jishiceping.com/person/test_card'
-        const appId = 'wx42b0c68b40525f96'
-        const obj = new WxLogin({
-          id: 'login_container',// div的id
-          appid: 'wx42b0c68b40525f96',
-          scope: 'snsapi_login',// 写死
-          redirect_uri: encodeURI(redirectUri),
-          state: '',
-          style: 'black',// 二维码黑白风格
-          // href: 'https://某个域名下的css文件'
-        })
-        console.log(obj)
+        const redirectUri = 'www.jishiceping.com/#/person/test_card'
+        const appId = 'wx047532f5c0c4273a'
+        // const obj = new WxLogin({
+        //   id: 'login_container',// div的id
+        //   appid: 'wx42b0c68b40525f96',
+        //   scope: 'snsapi_base',// 写死
+        //   redirect_uri: encodeURI(redirectUri),
+        //   state: '',
+        //   style: 'black',// 二维码黑白风格
+        //   // href: 'https://某个域名下的css文件'
+        // })
+        // console.log(obj)
+        const url = `https://open.weixin.qq.com/connect/qrconnect?appid=${appId}&redirect_uri=${redirectUri}&response_type=code&scope=snsapi_login#wechat_redirect`
+        window.location = url
       },
       showAvatar: function () {
         return window.localStorage.getItem('open_id')
