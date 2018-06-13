@@ -4,6 +4,7 @@ import Vue from 'vue'
 import App from './App'
 import router from './router'
 
+require('./vue-filter')
 Vue.config.productionTip = false
 import ElementUI from 'element-ui'
 

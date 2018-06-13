@@ -17,19 +17,23 @@
       </div>
 
       <ul class="right  bar-right">
-        <li :class="{'selected': $route.path==='/'}">
+        <li :class="{'selected': $route.path==='/' && !contact_dialog}">
           <router-link to="/">首页</router-link>
         </li>
-        <li :class="{'selected':$route.matched && $route.matched[0] && $route.matched[0].path==='/product'}">
+        <li
+          :class="{'selected':$route.matched && $route.matched[0] && $route.matched[0].path==='/product' && !contact_dialog}">
           <router-link to="/product/product">产品</router-link>
         </li>
-        <li :class="{'selected': $route.matched && $route.matched[0] && $route.matched[0].path==='/case'}">
+        <li
+          :class="{'selected': $route.matched && $route.matched[0] && $route.matched[0].path==='/case' && !contact_dialog}">
           <router-link to="/case/enterprise">案例</router-link>
         </li>
-        <li :class="{'selected': $route.matched && $route.matched[0] && $route.matched[0].path==='/news'}">
-        <router-link to="/news/news">文章</router-link>
+        <li
+          :class="{'selected': $route.matched && $route.matched[0] && $route.matched[0].path==='/news' && !contact_dialog}">
+          <router-link to="/news/news">文章</router-link>
         </li>
-        <li style="width: 90px;cursor: pointer" @click="contact_dialog = !contact_dialog">
+        <li style="width: 90px;cursor: pointer" @click="contact_dialog = !contact_dialog"
+            :class="{'selected':contact_dialog}">
           联系我们
         </li>
       </ul>
@@ -77,20 +81,25 @@
     },
     mounted: function () {
     },
+    watch: {
+      '$route.path': function (val) {
+        this.contact_dialog = false
+      }
+    },
     methods: {
       show_login_dialog: function () {
-        // const redirectUri = 'https://www.jishiceping.com/person/test_card'
-        // const appId = 'wx42b0c68b40525f96'
-        // const obj = new WxLogin({
-        //   id: 'login_container',// div的id
-        //   appid: 'wx42b0c68b40525f96',
-        //   scope: 'snsapi_login',// 写死
-        //   redirect_uri: encodeURI(redirectUri),
-        //   state: '',
-        //   style: 'black',// 二维码黑白风格
-        //   // href: 'https://某个域名下的css文件'
-        // })
-        // console.log(obj)
+        const redirectUri = 'https://www.jishiceping.com/person/test_card'
+        const appId = 'wx42b0c68b40525f96'
+        const obj = new WxLogin({
+          id: 'login_container',// div的id
+          appid: 'wx42b0c68b40525f96',
+          scope: 'snsapi_login',// 写死
+          redirect_uri: encodeURI(redirectUri),
+          state: '',
+          style: 'black',// 二维码黑白风格
+          // href: 'https://某个域名下的css文件'
+        })
+        console.log(obj)
       },
       showAvatar: function () {
         return window.localStorage.getItem('open_id')

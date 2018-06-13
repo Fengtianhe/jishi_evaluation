@@ -1,7 +1,7 @@
 // 配置API接口地址
 import {Message, Loading} from 'element-ui'
 
-let root = 'http://192.168.0.15/api'
+let root = 'https://api.jishiceping.com/api'
 // 引用axios
 const axios = require('axios')
 
@@ -55,31 +55,24 @@ function apiAxios (method, url, params, success, failure) {
     }
   }).then(function (res) {
     loadingInstance.close()
-    if (res.data.status === "SUCCESS") {
-      if (success) {
-        success(res.data.data);
-        return;
-      }
+    if (success) {
+      success(res.data)
     } else if (failure) {
-      failure(res.data);
-    } else {
-      Message.warning({message: res.data.message, duration: 10000})
-      // window.alert('error: ' + JSON.stringify(res.data));
+      failure(res.data)
     }
   }).catch(function (error) {
     loadingInstance.close()
-    let res = error.response;
     if (error.response) {
       // The request was made, but the server responded with a status code
       // that falls out of the range of 2xx
-      console.log(error.response.data);
-      console.log(error.response.status);
-      console.log(error.response.headers);
+      console.log(error.response.data)
+      console.log(error.response.status)
+      console.log(error.response.headers)
     } else {
       // Something happened in setting up the request that triggered an Error
-      console.log('Error', error.message);
+      console.log('Error', error.message)
     }
-    console.log(error.config);
+    console.log(error.config)
   });
 }
 
