@@ -88,7 +88,7 @@
     },
     methods: {
       show_login_dialog: function () {
-        const redirectUri = 'www.jishiceping.com'
+        const redirectUri = 'https%3A%2F%2Fwww.jishiceping.com%2F%23%2Fperson%2Ftest_card'
         const appId = 'wx047532f5c0c4273a'
         // const obj = new WxLogin({
         //   id: 'login_container',// div的id
