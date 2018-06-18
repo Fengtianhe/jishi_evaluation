@@ -73,7 +73,7 @@
     <div id="login_container"></div>
     <div id='jiayou' style="background:#fff; position:fixed; right:0; top:15%;">
       <img src="@/assets/img/gzh.png" width="200" height="200">
-      <p>免费领取测评卡</p>
+      <p>扫码免费听课</p>
     </div>
   </div>
 
