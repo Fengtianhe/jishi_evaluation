@@ -1,35 +1,36 @@
 <template>
   <div class="education-case">
-    <div class="item">
-      <img src="@/assets/img/skal10.png" alt="">
-    </div>
-    <div class="item">
-      <img src="@/assets/img/skal9.png" alt="">
-    </div>
-    <div class="item">
-      <img src="@/assets/img/skal8.png" alt="">
-    </div>
-    <div class="item">
-      <img src="@/assets/img/skal7.png" alt="">
-    </div>
-    <div class="item">
-      <img src="@/assets/img/skal6.png" alt="">
-    </div>
-    <div class="item">
-      <img src="@/assets/img/skal5.png" alt="">
-    </div>
-    <div class="item">
-      <img src="@/assets/img/skal4.png" alt="">
-    </div>
-    <div class="item">
-      <img src="@/assets/img/skal3.png" alt="">
-    </div>
-    <div class="item">
-      <img src="@/assets/img/skal2.png" alt="">
-    </div>
-    <div class="item">
-      <img src="@/assets/img/skal1.png" alt="">
-    </div>
+    <img src="@/assets/case/lecture.png" width="100%"/>
+    <!--<div class="item">-->
+      <!--<img src="@/assets/img/skal10.png" alt="">-->
+    <!--</div>-->
+    <!--<div class="item">-->
+      <!--<img src="@/assets/img/skal9.png" alt="">-->
+    <!--</div>-->
+    <!--<div class="item">-->
+      <!--<img src="@/assets/img/skal8.png" alt="">-->
+    <!--</div>-->
+    <!--<div class="item">-->
+      <!--<img src="@/assets/img/skal7.png" alt="">-->
+    <!--</div>-->
+    <!--<div class="item">-->
+      <!--<img src="@/assets/img/skal6.png" alt="">-->
+    <!--</div>-->
+    <!--<div class="item">-->
+      <!--<img src="@/assets/img/skal5.png" alt="">-->
+    <!--</div>-->
+    <!--<div class="item">-->
+      <!--<img src="@/assets/img/skal4.png" alt="">-->
+    <!--</div>-->
+    <!--<div class="item">-->
+      <!--<img src="@/assets/img/skal3.png" alt="">-->
+    <!--</div>-->
+    <!--<div class="item">-->
+      <!--<img src="@/assets/img/skal2.png" alt="">-->
+    <!--</div>-->
+    <!--<div class="item">-->
+      <!--<img src="@/assets/img/skal1.png" alt="">-->
+    <!--</div>-->
   </div>
 </template>
 

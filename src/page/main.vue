@@ -30,9 +30,7 @@
     <div class="banner">
       <img src="@/assets/index/b10.png" alt="">
     </div>
-    <div class="banner">
-      <img src="@/assets/index/b11.png" alt="">
-    </div>
+
     <!--<div class="enterprise_concept">-->
       <!--<div class="title_box">-->
         <!--<img src="@/assets/img/enterprise_concept_title.png" alt="" class="title">-->
