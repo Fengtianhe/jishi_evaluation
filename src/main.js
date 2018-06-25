@@ -12,6 +12,10 @@ Vue.use(ElementUI);
 import 'element-ui/lib/theme-chalk/index.css'
 // 引用API文件
 import api from './axios'
+
+require('swiper/dist/css/swiper.css')
+import VueAwesomeSwiper from 'vue-awesome-swiper'
+Vue.use(VueAwesomeSwiper)
 // 将API方法绑定到全局
 Vue.prototype.$api = api
 /* eslint-disable no-new */

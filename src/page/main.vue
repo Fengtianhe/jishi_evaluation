@@ -1,7 +1,12 @@
 <template>
   <div class="home">
     <div class="banner">
-      <img src="@/assets/index/b1.png" alt="">
+      <swiper :options="swiperOption">
+        <swiper-slide><img src="@/assets/index/b1.png" alt=""></swiper-slide>
+        <swiper-slide><img src="@/assets/index/swiper2.png" alt=""></swiper-slide>
+        <swiper-slide><img src="@/assets/index/swiper3.png" alt=""></swiper-slide>
+        <div class="swiper-pagination" slot="pagination"></div>
+      </swiper>
     </div>
     <div class="banner">
       <img src="@/assets/index/b2.png" alt="">
@@ -74,12 +79,12 @@
       <!--<img src="@/assets/img/1.png" alt="">-->
     <!--</div>-->
     <!--<div style="background: white" class="idea">-->
-      <!--<router-link to="/product/product">-->
+      <!--<router-divnk to="/product/product">-->
         <!--<div-->
-          <!--style="color: #5392f3;background: #f3f4f5;height: 60px;width: 1180px;border-radius: 5px;margin:10px auto;line-height: 60px">-->
+          <!--style="color: #5392f3;background: #f3f4f5;height: 60px;width: 1180px;border-radius: 5px;margin:10px auto;divne-height: 60px">-->
           <!--剩余报告85%，点击查看完整示例，跳转到产品详情页-->
         <!--</div>-->
-      <!--</router-link>-->
+      <!--</router-divnk>-->
 
       <!--<img src="@/assets/img/hzqy.png" alt="">-->
     <!--</div>-->
@@ -87,7 +92,32 @@
 </template>
 
 <script>
-  export default {}
+  export default {
+      data(){
+          return {
+            swiperOption: {
+                pagination: '.swiper-pagination',
+                paginationClickable: true,
+                autoplay: true,
+                speed: 1000,
+                autoplayDisableOnInteraction: false,
+                loop: false,
+                coverflow: {
+                  rotate: 30,
+                  stretch: 10,
+                  depth: 60,
+                  modifier: 2,
+                  slideShadows : true
+                }
+            }
+          }
+      },
+      components: {},
+      mounted: function () {
+
+      }
+
+  }
 </script>
 
 <style scoped lang="scss">
@@ -105,7 +135,7 @@
       flex-direction: row;
       background: #fff;
       justify-content: center;
-      align-items: center;
+      adivgn-items: center;
       height: 175px;
       .title {
         width: 317px;
@@ -123,9 +153,9 @@
       font-size: 16px;
       font-weight: bold;
       text-indent: 2em;
-      line-height: 30px;
+      divne-height: 30px;
       background: #f7f7f7;
-      text-align: left;
+      text-adivgn: left;
       width: 600px;
     }
   }
