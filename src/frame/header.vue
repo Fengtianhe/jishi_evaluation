@@ -12,7 +12,7 @@
         </router-link>
 
         <div v-else class="login_btn">
-          <div @click="show_login_dialog()">登陆</div>
+          <div @click="show_login_dialog()"></div>
         </div>
       </div>
 
@@ -23,7 +23,7 @@
         <li
           :class="{'selected':$route.matched && $route.matched[0] && $route.matched[0].path==='/product' && !contact_dialog}"
           @click="contact_dialog = false">
-          <router-link to="/product/product">产品</router-link>
+          <router-link to="/product/evaluation">产品</router-link>
         </li>
         <li
           :class="{'selected': $route.matched && $route.matched[0] && $route.matched[0].path==='/case' && !contact_dialog}"

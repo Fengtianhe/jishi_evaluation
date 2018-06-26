@@ -75,16 +75,31 @@ export default new Router({
       component: resolve => (require(['../frame/blank.vue'], resolve)),
       children: [
         {
-          path: '/product/product',
-          name: '产品列表',
-          component: resolve => (require(['../page/product/product.vue'], resolve))
-        }
+          path: '/product/evaluation',
+          name: '高中生专业测评',
+          component: resolve => (require(['../page/product/evaluation.vue'], resolve))
+        },
+        {
+            path: '/product/consultation',
+            name: '高中生报考一对一专家咨询',
+            component: resolve => (require(['../page/product/consultation.vue'], resolve))
+        },
+        {
+            path: '/product/e_and_c',
+            name: '高中生专业测评报考一对一专家咨询',
+            component: resolve => (require(['../page/product/e_and_c.vue'], resolve))
+        },
+          {
+            path: '/product/course',
+            name: '在线课程',
+            component: resolve => (require(['../page/product/course.vue'], resolve))
+        },
       ]
     },
     {
       path: '/news',
       name: '文章',
-      component: resolve => (require(['../frame/blank.vue'], resolve)),
+      component: resolve => (require(['../frame/News.vue'], resolve)),
       children: [
         {
           path: '/news/news',
