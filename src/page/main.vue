@@ -4,8 +4,9 @@
       <swiper :options="swiperOption">
         <swiper-slide><img src="@/assets/index/b1.png" alt=""></swiper-slide>
         <swiper-slide><img src="@/assets/index/swiper2.png" alt=""></swiper-slide>
-        <swiper-slide><img src="@/assets/index/swiper3.png" alt=""></swiper-slide>
+        <swiper-slide><img src="@/assets/index/swiper3.jpeg" alt=""></swiper-slide>
         <swiper-slide><img src="@/assets/index/swiper4.jpg" alt=""></swiper-slide>
+        <swiper-slide><img src="@/assets/index/swiper5.jpeg" alt=""></swiper-slide>
         <div class="swiper-pagination" slot="pagination"></div>
       </swiper>
     </div>
