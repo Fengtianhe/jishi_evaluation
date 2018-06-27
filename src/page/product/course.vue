@@ -5,7 +5,7 @@
             <ul class="course-live">
                 <li>
                     <a href="https://v.qq.com/x/page/b0686l9lcsc.html" target="_blank">
-                        <img src="@/assets/product/4.jpg" width="100%"/>
+                        <img src="@/assets/product/course/WechatIMG15.jpeg" width="100%"/>
                     </a>
                     <p>高考志愿填报解析，让你选择适合的专业</p>
                     <p>
@@ -15,7 +15,7 @@
                 </li>
                 <li>
                     <a href="https://m.v.qq.com/x/page/r/6/y/r069065wh6y.html?from=singlemessage" target="_blank">
-                        <img src="@/assets/product/4.jpg" width="100%"/>
+                        <img src="@/assets/product/course/WechatIMG16.jpeg" width="100%"/>
                     </a>
                     <p>高考分数不理想，选对专业照样博出精彩人生</p>
                     <p>
@@ -24,28 +24,8 @@
                     </p>
                 </li>
                 <li>
-                    <a href="https://m.v.qq.com/x/page/y/6/5/y06902tg165.html?from=singlemessage" target="_blank">
-                        <img src="@/assets/product/4.jpg" width="100%"/>
-                    </a>
-                    <p>为什么名牌大学毕业却找不到工作？</p>
-                    <p>
-                        <span>免费</span>
-                        <span>3.4万次观看</span>
-                    </p>
-                </li>
-                <li>
-                    <a href="https://m.v.qq.com/x/page/g/r/7/g0690fwgkr7.html?from=singlemessage" target="_blank">
-                        <img src="@/assets/product/4.jpg" width="100%"/>
-                    </a>
-                    <p>真实案例解析，专业选择的科学方式！</p>
-                    <p>
-                        <span>免费</span>
-                        <span>1.4万次观看</span>
-                    </p>
-                </li>
-                <li>
                     <a href="https://m.qlchat.com/topic/details?topicId=2000001481391962&shareKey=782b98442c9e363efa6533a3f1adaf84" target="_blank">
-                        <img src="@/assets/product/4.jpg" width="100%"/>
+                        <img src="@/assets/product/course/WechatIMG17.jpeg" width="100%"/>
                     </a>
                     <p>以志愿胜出，避开传统志愿填报习惯及误区</p>
                     <p>
@@ -55,7 +35,7 @@
                 </li>
                 <li>
                     <a href="https://m.qlchat.com/topic/details?topicId=2000001487603169&shareKey=e54c1d591ce49a27e4adae6fecd55832" target="_blank">
-                        <img src="@/assets/product/4.jpg" width="100%"/>
+                        <img src="@/assets/product/course/WechatIMG18.jpeg" width="100%"/>
                     </a>
                     <p>高考分数不理想，选对专业照样博出精彩人生</p>
                     <p>
@@ -65,7 +45,7 @@
                 </li>
                 <li>
                     <a href="https://m.qlchat.com/topic/details?topicId=2000001494774730&shareKey=da924ae8def4c3ac19459554c5fd3f40" target="_blank">
-                        <img src="@/assets/product/4.jpg" width="100%"/>
+                        <img src="@/assets/product/course/WechatIMG19.jpeg" width="100%"/>
                     </a>
                     <p>高考生定位，如何选择适合的专业</p>
                     <p>
@@ -75,12 +55,22 @@
                 </li>
                 <li>
                     <a href="https://m.qlchat.com/topic/details?topicId=2000001509894686&shareKey=922f00bea882e1bee082cb4bd84a15a9" target="_blank">
-                        <img src="@/assets/product/4.jpg" width="100%"/>
+                        <img src="@/assets/product/course/WechatIMG20.jpeg" width="100%"/>
                     </a>
                     <p>真实案例解析，教你如何选择专业</p>
                     <p>
                         <span>免费</span>
                         <span>3.1万次观看</span>
+                    </p>
+                </li>
+                <li>
+                    <a href="https://m.qlchat.com/topic/details?topicId=2000001527459041&shareKey=144ad057112c8fd27b5860504abdd7d3" target="_blank">
+                        <img src="@/assets/product/course/WechatIMG32.jpeg" width="100%"/>
+                    </a>
+                    <p>高考生定位，如何选择最适合的专业</p>
+                    <p>
+                        <span>免费</span>
+                        <span>1万次观看</span>
                     </p>
                 </li>
             </ul>
@@ -96,7 +86,7 @@
                     <!--</p>-->
                 <!--</li>-->
                 <!--<li>-->
-                    <!--<a href="" target="_blank"><img src="@/assets/product/4.jpg" width="100%"/></a>-->
+                    <!--<a href="" target="_blank"><img src="@/assets/product/course/WechatIMG16.jpeg" width="100%"/></a>-->
                     <!--<p>-->
                         <!--<span>免费</span>-->
                         <!--<span>3800次观看</span>-->
