@@ -49,7 +49,7 @@
                 autoplay: true,
                 speed: 1000,
                 autoplayDisableOnInteraction: false,
-                loop: false,
+                loop: true,
                 coverflow: {
                   rotate: 30,
                   stretch: 10,
