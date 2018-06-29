@@ -19,6 +19,11 @@ Vue.use(VueAwesomeSwiper)
 // 将API方法绑定到全局
 Vue.prototype.$api = api
 /* eslint-disable no-new */
+// 验证是否是手机端
+Vue.prototype._isMobile = function (){
+    let flag = navigator.userAgent.match(/(phone|pad|pod|iPhone|iPod|ios|iPad|Android|Mobile|BlackBerry|IEMobile|MQQBrowser|JUC|Fennec|wOSBrowser|BrowserNG|WebOS|Symbian|Windows Phone)/i)
+    return flag;
+}
 new Vue({
   el: '#app',
   router,

@@ -23,9 +23,16 @@
     mounted: function () {
       //o3ny05PvLra8OLBKMIOdDmt7Qbz4
       localStorage.setItem('open_id', '')
-    }
-  }
+        console.log(this);
+        if (this._isMobile()) {
+            window.location.href = 'https://api.jishiceping.com';
+        } else {
+            this.$router.replace('/');
+        }
 
+    },
+
+  }
 
   // 百度统计
   var _hmt = _hmt || [];
