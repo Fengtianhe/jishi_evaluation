@@ -5,7 +5,6 @@
         <swiper-slide><img src="@/assets/index/swiper1.png" alt=""></swiper-slide>
         <swiper-slide><img src="@/assets/index/swiper2.png" alt=""></swiper-slide>
         <swiper-slide><img src="@/assets/index/swiper3.png" alt=""></swiper-slide>
-        <swiper-slide><img src="@/assets/index/swiper5.png" alt=""></swiper-slide>
         <div class="swiper-pagination" slot="pagination"></div>
       </swiper>
     </div>
